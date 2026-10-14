@@ -1,0 +1,53 @@
+# This project was generated with 0.4.2 using template: https://github.com/beeware/briefcase-template @ v0.4.2
+[tool.briefcase]
+project_name = "MapTalks"
+bundle = "com.example"
+version = "0.0.1"
+url = "https://example.com/maptalks"
+license = "BSD-3-Clause"
+license-files = ["LICENSE"]
+author = "ngabor"
+author_email = "ngabor2013@gmail.com"
+
+[tool.briefcase.app.maptalks]
+formal_name = "MapTalks"
+description = "Maptalks tests with Toga"
+long_description = """More details about the app should go here.
+"""
+sources = [
+    "src/maptalks",
+]
+
+requires = [
+]
+
+[tool.briefcase.app.maptalks.macOS]
+universal_build = true
+requires = [
+    "toga-cocoa~=0.5.0",
+    "std-nslog~=1.0.3",
+]
+
+# Mobile deployments
+[tool.briefcase.app.maptalks.iOS]
+requires = [
+    "toga-iOS~=0.5.0",
+    "std-nslog~=1.0.3",
+]
+
+[tool.briefcase.app.maptalks.android]
+requires = [
+    "toga-android~=0.5.0",
+]
+
+base_theme = "Theme.MaterialComponents.Light.DarkActionBar"
+
+build_gradle_dependencies = [
+    "com.google.android.material:material:1.13.0",
+    # Needed for DetailedList
+    # "androidx.swiperefreshlayout:swiperefreshlayout:1.1.0",
+    # Needed for MapView
+    # "org.osmdroid:osmdroid-android:6.1.20",
+    # Needed for WebView
+    # "androidx.webkit:webkit:1.15.0",
+]

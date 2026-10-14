@@ -1,0 +1,11 @@
+Metadata-Version: 2.1
+Briefcase-Version: 0.4.2
+Name: maptalks
+Formal-Name: MapTalks
+App-ID: com.example.maptalks
+Version: 0.0.1
+Home-page: https://example.com/maptalks
+Download-URL: https://example.com/maptalks
+Author: ngabor
+Author-email: ngabor2013@gmail.com
+Summary: Maptalks tests with Toga
